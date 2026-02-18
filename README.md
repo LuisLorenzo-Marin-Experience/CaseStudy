@@ -13,7 +13,8 @@ This repository contains structured case studies, platform engineering projects,
 - Performance engineering
 
 
-MigrationFromOracle
+Migration From Oracle
+Project Executed Migration from Oracle to SQL Server.
 https://github.com/LuisLorenzo-Marin-Experience/CaseStudy/blob/87981c399bca35b821e829de52cc324faa02a017/MigrationFromOracle
 
 This portfolio is designed as a **living engineering knowledge base**, not a code dump.
