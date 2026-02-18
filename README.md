@@ -20,10 +20,14 @@ https://github.com/LuisLorenzo-Marin-Experience/CaseStudy/blob/87981c399bca35b82
 
 
 Progressive PostgreSQL Upgrade
-- Project Executed Upgrade of Engine version
+- Project Executed Upgrade of the engine version
 
 https://github.com/LuisLorenzo-Marin-Experience/CaseStudy/blob/563e73a8ef07d3c7e930a3f157a1b49142b59d1b/Progressive-PostgreSQL-Upgrade
 
+PostgreSQL MySQL integration
+- Project Executed linking engines
+
+https://github.com/LuisLorenzo-Marin-Experience/CaseStudy/blob/196e7f1b2b5882a8e4887947e1dadd5c630a2beb/PostgreSQL-MySQL
 
 This portfolio is designed as a **living engineering knowledge base**, not a code dump.
 ---
