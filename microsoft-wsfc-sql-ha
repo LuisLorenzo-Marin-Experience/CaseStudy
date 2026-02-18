@@ -1,7 +1,4 @@
-Case Study
-Traditional Microsoft SQL Server High Availability Cluster Architecture
-
-Context
+Executive Summary:
 
 The organization operates mission-critical workloads on Microsoft platforms using a traditional high-availability architecture based on:
 
