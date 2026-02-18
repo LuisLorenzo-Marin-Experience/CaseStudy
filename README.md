@@ -29,6 +29,10 @@ PostgreSQL MySQL integration
 
 https://github.com/LuisLorenzo-Marin-Experience/CaseStudy/blob/196e7f1b2b5882a8e4887947e1dadd5c630a2beb/PostgreSQL-MySQL
 
+Traditional Microsoft SQL Server High Availability Cluster Architecture
+Enterprise SQL Server High Availability Architecture using Windows Server Failover Clustering (WSFC)
+
+
 This portfolio is designed as a **living engineering knowledge base**, not a code dump.
 ---
 Feel free to explore my repositories, and don't hesitate to reach out if you'd like to collaborate!
