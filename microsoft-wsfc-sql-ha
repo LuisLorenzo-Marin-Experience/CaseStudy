@@ -1,5 +1,5 @@
 Executive Summary Case Study
-
+______________________________________________________________________________________________________________________________________________________________________________
 The organization operates mission-critical workloads on Microsoft platforms using a traditional high-availability architecture based on:
 
 Microsoft SQL Server Enterprise Edition
@@ -13,6 +13,7 @@ Shared storage / clustered storage architecture
 Enterprise-grade reliability design
 
 The project focused on extending the existing WSFC architecture by integrating a third cluster node, while ensuring platform stability, reliability, and operational consistency.
+___________________________________________________________________________________________________________________________________________________________________________________
 
 Objectives
 Technical Objectives
