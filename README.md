@@ -20,8 +20,11 @@ https://github.com/LuisLorenzo-Marin-Experience/CaseStudy/blob/87981c399bca35b82
 
 This portfolio is designed as a **living engineering knowledge base**, not a code dump.
 
----
+Progressive PostgreSQL Upgrade
+-- Project Executed Upgrade of Engine version
+https://github.com/LuisLorenzo-Marin-Experience/CaseStudy/blob/563e73a8ef07d3c7e930a3f157a1b49142b59d1b/Progressive-PostgreSQL-Upgrade
 
-⭐️ Feel free to explore my repositories and don't hesitate to reach out if you'd like to collaborate!
+---
+Feel free to explore my repositories, and don't hesitate to reach out if you'd like to collaborate!
 **LinkedIn:** https://www.linkedin.com/in/luismarinaray/
 
