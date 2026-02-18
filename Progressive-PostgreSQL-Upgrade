@@ -1,0 +1,242 @@
+
+# Case Study
+
+## Controlled PostgreSQL Version Upgrade Strategy in AWS Production Environments
+
+---
+
+## 🧭 Project Title
+
+**Progressive PostgreSQL Upgrade Strategy for Production & PreProduction Environments on AWS**
+
+---
+
+## 📍 Context
+
+The organization was operating production workloads on **PostgreSQL 13.x** hosted in **AWS**, with **Strapi 4.5** as an application dependency layer.
+
+The long-term target platform was **PostgreSQL 14**, driven by:
+
+* platform lifecycle management
+* security updates
+* deprecation timelines
+* vendor support policies
+* AWS managed service version lifecycle
+* application compatibility requirements
+
+However, a **direct upgrade to PostgreSQL 14** was not executed immediately in production due to:
+
+* risk management
+* dependency validation
+* operational stability requirements
+* phased upgrade strategy
+* production risk controls
+
+Instead, a **progressive migration model** was adopted.
+
+---
+
+## 🎯 Objectives
+
+### Technical Objectives
+
+* Maintain production stability
+* Align with AWS deprecation policies
+* Avoid unsupported engine versions
+* Ensure application compatibility
+* Minimize downtime
+* Maintain rollback capability
+* Ensure data integrity
+* Enable staged modernization
+
+### Operational Objectives
+
+* Risk-controlled production changes
+* Clear stakeholder communication
+* Controlled maintenance windows
+* Predictable timelines
+* Business continuity
+* Compliance with platform lifecycle management
+
+---
+
+## Strategy Adopted
+
+### **Progressive Upgrade Model (Phased Migration)**
+
+Rather than performing a direct major version jump, the project adopted a **two-phase migration strategy**:
+
+### Phase 1 — Stabilization Upgrade
+
+**Production Environment**
+
+```
+PostgreSQL 13.x (older minor version)
+→ PostgreSQL 13.15
+```
+
+Purpose:
+
+* Remain within the same major version
+* Minimize compatibility risks
+* Address deprecation alerts
+* Maintain operational stability
+* Align with AWS lifecycle policies
+* Reduce upgrade blast radius
+
+---
+
+### Phase 2 — Modernization Upgrade
+
+**PreProduction Environment**
+
+```
+PostgreSQL 13.x
+→ PostgreSQL 14.x
+```
+
+Purpose:
+
+* Validate application compatibility
+* Test Strapi integration
+* Validate schema behavior
+* Test performance characteristics
+* Validate extensions
+* Prepare production migration path
+* De-risk major version upgrade
+
+---
+
+## Engineering Rationale
+
+This strategy follows **enterprise-grade upgrade principles**:
+
+### Risk Management
+
+* No direct major version jump in production
+* Staged validation environments
+* Controlled blast radius
+* Rollback capability
+* Progressive exposure
+
+### Platform Engineering
+
+* Version lifecycle management
+* Compatibility validation
+* Dependency awareness
+* Vendor deprecation alignment
+* Cloud service lifecycle governance
+
+### Reliability Engineering
+
+* Backup-first approach
+* Snapshot-based rollback
+* Database export for recovery
+* Verification checkpoints
+* Controlled maintenance window
+
+---
+
+## ⚙️ Operational Plan
+
+### Step 1 — Full Backup Strategy
+
+**Multi-layer backup model:**
+
+1. Infrastructure level:
+
+   * AWS system snapshot
+2. Data level:
+
+   * Full database export
+   * Restore-ready artifacts
+
+Purpose:
+
+* Disaster recovery
+* Rollback readiness
+* Data protection
+* Operational safety net
+
+---
+
+### Step 2 — Controlled Upgrade Execution
+
+* Version upgrade execution
+* No schema changes
+* No application changes
+* Platform-only operation
+
+---
+
+### Step 3 — Verification Protocol
+
+#### Technical verification:
+
+* Engine version confirmation
+* Service health validation
+* Connectivity checks
+* Application access tests
+
+#### Operational verification:
+
+* Team notification
+* Change communication
+* Documentation updates
+
+---
+
+## Operational Constraints
+
+* **Time window:** 1 hour
+* **Production impact:** Controlled downtime window
+* **Rollback readiness:** Snapshot + export
+
+---
+
+## Governance Model
+
+* Stakeholder approval workflow
+* Change communication protocol
+* Environment segregation (Prod / PreProd)
+* Version governance strategy
+* Cloud platform lifecycle alignment
+* Application dependency validation
+* Risk classification model
+
+---
+
+## Outcomes
+
+### Technical Outcomes
+
+* Production stability preserved
+* AWS deprecation risk mitigated
+* Version lifecycle compliance achieved
+* Upgrade path established
+* Compatibility validation enabled
+* Future migration path prepared
+
+### Operational Outcomes
+
+* Controlled change management
+* Predictable deployment window
+* Stakeholder alignment
+* Low-risk production operation
+* No reported configuration issues
+* Structured upgrade governance
+
+## Engineering Principles Applied
+
+* Backup-first operations
+* Progressive exposure
+* Environment-based validation
+* Cloud lifecycle governance
+* Dependency-aware upgrades
+* Risk-controlled change management
+* Platform lifecycle engineering
+* Reliability-first design
+* Operational safety modeling
+
+---
+
