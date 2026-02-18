@@ -1,0 +1,242 @@
+# AWS RDS SQL Server High Availability & Disaster Recovery Architecture
+
+---
+
+## Case Study
+
+### Project Title
+
+**Enterprise SQL Server High Availability Architecture on AWS RDS**
+
+---
+
+## Context
+
+The organization operates mission-critical production databases using Amazon Web Services managed services, specifically:
+
+* AWS RDS for SQL Server
+* Managed High Availability configurations
+* Multi-AZ deployments
+* Zone-level fault tolerance
+* Cloud-native resilience engineering
+* Managed platform operations
+
+The project focused on validating, documenting, and governing a **cloud-native HA/DR strategy** using managed database services instead of infrastructure-managed clustering models.
+
+---
+
+## Objectives
+
+### Technical Objectives
+
+* Ensure production high availability
+* Validate Multi-AZ configuration
+* Maintain service continuity
+* Enable zone-level fault tolerance
+* Validate region selection strategy
+* Align with AWS service lifecycle policies
+* Enable controlled DR testing
+* Maintain data durability guarantees
+
+### Operational Objectives
+
+* Formalize DR documentation
+* Define failover procedures
+* Establish governance controls
+* Prepare DR testing processes
+* Define change management workflows
+* Ensure operational predictability
+
+---
+
+## Architecture Model
+
+### Core Platform
+
+* AWS RDS SQL Server
+* Managed High Availability
+* Multi-AZ architecture
+* Automated failover
+* Managed backups
+* Managed patching
+* Managed replication
+* Cloud-native resilience model
+
+---
+
+## Engineering Scope
+
+### High Availability Configuration (Multi-AZ)
+
+#### Platform Capabilities
+
+* Synchronous replication
+* Automatic failover
+* Zone-level redundancy
+* Managed infrastructure
+* Service-level HA
+* SLA-driven availability model
+
+**Engineering Focus:**
+
+* Eliminate infrastructure-level clustering
+* Use platform-managed HA
+* Reduce operational complexity
+* Shift from node-based HA to service-based HA
+
+---
+
+### Region Strategy & Governance
+
+#### Engineering Considerations
+
+* Ability to select specific AWS regions
+* Regional service availability
+* Latency considerations
+* Compliance requirements
+* Data residency governance
+* Cost modeling
+* DR region alignment
+* Network topology design
+
+**Key design principle:**
+Region selection is a governance decision, not just a technical one.
+
+---
+
+## Disaster Recovery (DR) Strategy — Cloud Model
+
+### DR Engineering Components
+
+* Automated backups
+* Snapshot management
+* Cross-region snapshot replication
+* Point-in-time recovery (PITR)
+* Restore-based DR model
+* Region-level recovery
+* Service-level recovery
+* Platform-managed durability
+
+---
+
+### DR Testing Requirements
+
+* Formal DR documentation
+* Recovery workflows
+* Restore procedures
+* Validation steps
+* Application reconnection flows
+* RPO/RTO definitions
+* Failover simulations
+* Operational runbooks
+* Communication plans
+
+---
+
+## Methodology Identified
+
+### Cloud-Native HA/DR Engineering Model
+
+This project follows a:
+
+> **Managed Service High Availability & Disaster Recovery Methodology**
+
+Not:
+
+* infrastructure clustering
+* node-based failover
+* manual replication
+* self-managed HA
+
+But:
+
+* platform-managed HA
+* service-level resilience
+* cloud-native DR
+* managed backups
+* automated recovery
+* governance-driven design
+* reliability-first architecture
+
+---
+
+## Architecture Pattern
+
+```
+AWS RDS SQL Server
+        +
+Multi-AZ High Availability
+        +
+Managed Replication
+        +
+Automated Failover
+        +
+Snapshot-based DR
+        +
+Cross-Region Recovery Model
+        +
+Formal DR Governance
+```
+
+---
+
+## Engineering Principles Applied
+
+* Cloud-native design
+* Managed service architecture
+* Service-level resilience
+* Platform abstraction
+* Reliability engineering
+* Automation-first operations
+* Governance-driven architecture
+* Operational simplicity
+* Fault-domain isolation
+* Region-level resilience
+
+---
+
+## Outcomes
+
+### Technical Outcomes
+
+* High availability ensured
+* Multi-AZ resilience validated
+* Zone-level fault tolerance achieved
+* Managed failover enabled
+* Platform reliability increased
+* Operational complexity reduced
+* DR recovery model defined
+* Region-level resilience enabled
+
+### Operational Outcomes
+
+* Formal DR planning
+* Structured governance model
+* Operational predictability
+* Reduced human error risk
+* Simplified operations
+* Standardized recovery procedures
+* Test readiness achieved
+* Documentation governance enabled
+
+---
+
+## Professional Summary Statement
+
+> “This project implemented a cloud-native high availability and disaster recovery architecture using AWS RDS SQL Server. By leveraging managed Multi-AZ deployments, automated failover, and snapshot-based recovery models, the platform achieved service-level resilience, reduced operational complexity, and established a governed, enterprise-grade HA/DR strategy.”
+
+---
+
+## Methodology Classification
+
+| Dimension            | Classification                 |
+| -------------------- | ------------------------------ |
+| Platform             | AWS Managed Services           |
+| HA Model             | Multi-AZ RDS                   |
+| DR Model             | Snapshot-based / Restore-based |
+| Architecture         | Cloud-native                   |
+| Governance           | Enterprise-grade               |
+| Risk Model           | Risk-controlled                |
+| Engineering Maturity | Advanced                       |
+| Platform Strategy    | Reliability-first              |
+
