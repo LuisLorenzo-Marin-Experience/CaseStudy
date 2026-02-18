@@ -18,3 +18,5 @@ This portfolio is designed as a **living engineering knowledge base**, not a cod
 ---
 
 ⭐️ Feel free to explore my repositories and don't hesitate to reach out if you'd like to collaborate!
+**LinkedIn:** https://www.linkedin.com/in/luismarinaray/
+
