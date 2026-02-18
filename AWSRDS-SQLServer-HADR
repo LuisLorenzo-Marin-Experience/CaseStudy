@@ -2,7 +2,7 @@ Executive Summary Case Study: AWS RDS SQL Server High Availability & Disaster Re
 ___________________________________________________________________________________________________
 
 
-## Context
+## Bussines Context
 
 The organization operates mission-critical production databases using Amazon Web Services managed services, specifically:
 
