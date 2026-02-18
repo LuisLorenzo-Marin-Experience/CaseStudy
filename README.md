@@ -32,6 +32,8 @@ https://github.com/LuisLorenzo-Marin-Experience/CaseStudy/blob/196e7f1b2b5882a8e
 Traditional Microsoft SQL Server High Availability Cluster Architecture
 Enterprise SQL Server High Availability Architecture using Windows Server Failover Clustering (WSFC)
 
+https://github.com/LuisLorenzo-Marin-Experience/CaseStudy/blob/6cfe88d74762835b639a96711eb4fa8cb99b31d9/microsoft-wsfc-sql-ha
+
 
 This portfolio is designed as a **living engineering knowledge base**, not a code dump.
 ---
