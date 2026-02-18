@@ -34,6 +34,10 @@ Enterprise SQL Server High Availability Architecture using Windows Server Failov
 
 https://github.com/LuisLorenzo-Marin-Experience/CaseStudy/blob/6cfe88d74762835b639a96711eb4fa8cb99b31d9/microsoft-wsfc-sql-ha
 
+AWS RDS SQL Server HA
+- Designed cloud-native SQL Server HA/DR architectures using AWS RDS Multi-AZ, managed failover, automated backups, and cross-region disaster recovery models.
+
+https://github.com/LuisLorenzo-Marin-Experience/CaseStudy/blob/6b81224bad78e8e0ded9b0398c1cc88e68016745/AWSRDS-SQLServer-HADR
 
 This portfolio is designed as a **living engineering knowledge base**, not a code dump.
 ---
