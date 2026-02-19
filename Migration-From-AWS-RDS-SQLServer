@@ -1,0 +1,151 @@
+Enterprise Database Migration Case Study: AWS RDS SQL Server to Azure SQL Platform
+
+Executive Summary:
+
+This case study documents the successful migration of a mission-critical SQL Server workload from AWS RDS SQL Server to Microsoft Azure SQL platforms. The project implemented a dual-path strategy, enabling modernization through Azure SQL Database for 
+cloud-native workloads and compatibility-driven migration through Azure SQL Managed Instance for legacy systems. The migration improved operational efficiency, security posture, scalability, and governance while ensuring business continuity, performance stability, and compliance alignment. This initiative represents a strategic transformation from infrastructure-managed databases to platform-managed data service
+
+Business Context
+
+This project involved the migration of a production-grade SQL Server workload from Amazon Web Services RDS SQL Server to Microsoft Azure, supporting business-critical applications with strict requirements for:
+Availability
+Security
+Compliance
+Performance
+Scalability
+Business continuity
+
+The migration was part of a cloud modernization and platform consolidation strategy.
+
+Objectives
+
+Modernize database platform
+Reduce infrastructure management overhead
+Improve availability and resiliency
+Enhance security posture
+Enable cloud-native services
+Optimize cost model
+Standardize governance and operations
+Enable DevOps integration
+
+Migration Paths
+Path A — AWS RDS SQL Server ➜ Azure SQL Database
+
+Target Model
+Platform-as-a-Service (PaaS) single/elastic database architecture
+Key Characteristics
+Fully managed service
+No OS management
+No SQL Server instance management
+Built-in HA
+Built-in backups
+Auto-patching
+Auto-scaling
+Cloud-native security
+
+Use Case Fit
+
+Cloud-native applications
+Modern microservices
+SaaS platforms
+API-driven workloads
+Application modernization initiatives
+
+Path B — AWS RDS SQL Server ➜ Azure SQL Managed Instance
+
+Target Model
+Instance-level PaaS architecture
+Key Characteristics
+Instance compatibility
+Near 100% SQL Server feature parity
+Lift-and-shift friendly
+Minimal refactoring
+
+Supports:
+SQL Agent
+Linked Servers
+Cross-database queries
+CLR
+Service Broker
+Distributed transactions
+Instance-level objects
+
+Use Case Fit
+
+Legacy applications
+Vendor systems
+ERP/CRM platforms
+Monolithic systems
+
+Minimal-change migrations
+
+
+Migration Strategy
+Technical Approach
+
+Schema migration
+Data migration
+Security migration (logins, roles, permissions)
+Integration migration
+Job migration
+Monitoring migration
+Backup/DR alignment
+Performance tuning
+Connectivity redesign
+
+Security Model
+
+Identity-first access
+Azure AD integration
+RBAC governance
+Managed identities
+Network isolation
+Private Endpoints
+Encryption at rest
+Encryption in transit
+Centralized auditing
+
+Connectivity Model
+
+Private networking
+Hybrid connectivity
+Secure routing
+DNS abstraction
+Application connection abstraction
+Service endpoint integration
+
+Validation Strategy
+
+Functional testing
+Data consistency validation
+Performance benchmarking
+Security validation
+Failover testing
+Application testing
+Integration testing
+User acceptance testing (UAT)
+
+Governance & Operations
+
+CI/CD pipelines
+Git-based schema management
+Automated deployments
+Change control
+Approval gates
+Monitoring integration
+Alerting
+Compliance reporting
+Audit logging
+
+Outcomes
+
+Successful migration
+Zero data loss
+Controlled downtime
+Improved resiliency
+Reduced operational overhead
+Enhanced security posture
+Cloud-native scalability
+Platform standardization
+DevOps enablement
+Compliance alignment
