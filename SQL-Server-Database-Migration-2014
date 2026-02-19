@@ -1,0 +1,103 @@
+Migration from SQL Server 2005 to SQL Server 2014 (Single Instance)
+
+Executive Case Study Summary
+
+This case study documents the modernization of a legacy SQL Server 2005 single-instance environment to SQL Server 2014. The project addressed critical risks related to licensing compliance, platform obsolescence, scalability limitations, 
+and operational sustainability. The migration strategy combined technical modernization with organizational enablement through training, consulting, and infrastructure modernization. The result was a secure, scalable, compliant, and supportable 
+database platform aligned with modern enterprise standards.
+
+Business Context
+
+The organization is currently operating on a legacy SQL Server 2005 environment with outdated licensing and infrastructure, supporting a growing user base and increasing operational demands.
+
+Current Licensing Inventory
+Microsoft SQL Server 2005 User CAL License
+Product: SQL CAL 2005 English Open No Level User CAL
+Version: 2005
+Quantity: 20 CALs
+Microsoft SQL Server 2005 Standard Edition
+Platform: Win32
+Language: English
+Version: 2005
+Quantity: 1 Server License
+
+This licensing model is technically and operationally misaligned with the current usage profile.
+
+Current Usage Scenario
+
+User Connectivity Profile
+Average number of connected users: ~450 users
+Current CAL model: 20 User CALs
+Resulting gap:
+Licensing misalignment
+Compliance risk
+Scalability limitations
+Performance and concurrency risks
+
+Business & Technical Drivers for Migration
+Technical Drivers
+End-of-life platform (SQL Server 2005 unsupported)
+Security vulnerabilities
+Compatibility limitations
+Performance constraints
+Lack of modern features
+Limited monitoring and governance capabilities
+
+Business Drivers
+Regulatory compliance
+Operational continuity
+Scalability requirements
+Risk reduction
+Platform modernization
+Cost predictability
+Supportability
+
+Migration Scope
+
+Source Environment
+SQL Server 2005
+Single instance architecture
+Legacy OS platform
+CAL-based licensing model
+Physical/legacy hardware
+
+Target Environment
+SQL Server 2014
+Single instance architecture
+Modern OS platform
+Core-based licensing model
+Modern hardware or virtualized infrastructure
+Centralized monitoring and governance
+
+Migration Strategy
+Technical Phases
+
+Assessment & discovery
+Compatibility analysis
+Schema migration
+Data migration
+Security migration
+Application testing
+Performance validation
+User acceptance testing (UAT)
+Production cutover
+Post-migration validation
+
+Additional Components to Include in the Proposal
+
+1️⃣ Training Program (Courses)
+2️⃣ Consulting Services
+3️⃣ Infrastructure & OS Licensing
+
+Expected Outcomes
+
+Supported SQL Server platform
+Compliance-aligned licensing
+Improved performance
+Increased scalability
+Security hardening
+Operational stability
+Modern governance model
+Reduced technical debt
+Improved supportability
+Platform standardization
