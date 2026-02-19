@@ -39,6 +39,11 @@ AWS RDS SQL Server HA
 
 https://github.com/LuisLorenzo-Marin-Experience/CaseStudy/blob/6b81224bad78e8e0ded9b0398c1cc88e68016745/AWSRDS-SQLServer-HADR
 
+SQL Server Database Migrations
+- Database Migration Projects
+  
+https://github.com/LuisLorenzo-Marin-Experience/CaseStudy/blob/7a881ad8b1a9e4e88cb629ec2807ecd38e2007ff/SQL-Server-Database-Migration
+
 This portfolio is designed as a **living engineering knowledge base**, not a code dump.
 ---
 Feel free to explore my repositories, and don't hesitate to reach out if you'd like to collaborate!
