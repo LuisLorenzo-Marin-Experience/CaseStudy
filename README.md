@@ -16,8 +16,7 @@ This repository contains structured case studies, platform engineering projects,
 Migration From Oracle
 - Project Executed Migration from Oracle to SQL Server.
 
-https://github.com/LuisLorenzo-Marin-Experience/CaseStudy/blob/87981c399bca35b821e829de52cc324faa02a017/MigrationFromOracle
-
+https://github.com/LuisLorenzo-Marin-Experience/CaseStudy/blob/9f49f9c875e6d81311afdf640e141754d2b21b59/Migration-From-Oracle
 
 Progressive PostgreSQL Upgrade
 - Project Executed Upgrade of the engine version
