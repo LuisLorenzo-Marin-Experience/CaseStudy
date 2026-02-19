@@ -1,49 +1,49 @@
+AWS RDS SQL Server High Availability Solution
+__________________________________________________________________________________________________________________________________________________________________________________
 Executive Summary Case Study: AWS RDS SQL Server High Availability & Disaster Recovery Architecture
-___________________________________________________________________________________________________
 
+This document reflects the implementation of a High Available solution using AWS RDS MultiAZ 
+___________________________________________________________________________________________________________________________________________________________________________________
 
-## Bussines Context
+Business Context
 
 The organization operates mission-critical production databases using Amazon Web Services managed services, specifically:
 
-* AWS RDS for SQL Server
-* Managed High Availability configurations
-* Multi-AZ deployments
-* Zone-level fault tolerance
-* Cloud-native resilience engineering
-* Managed platform operations
+AWS RDS for SQL Server
+Managed High Availability configurations
+Multi-AZ deployments
+Zone-level fault tolerance
+Cloud-native resilience engineering
+Managed platform operations
 
-The project focused on validating, documenting, and governing a **cloud-native HA/DR strategy** using managed database services instead of infrastructure-managed clustering models.
+The project focused on validating, documenting, and governing a cloud-native HA/DR strategy using managed database services rather than infrastructure-managed clustering models.
 
----
+_____________________________________________________________________________________________________________________________________________________________________________________
+Objectives
+Technical Objectives
 
-## Objectives
+Ensure production high availability
+Validate Multi-AZ configuration
+Maintain service continuity
+Enable zone-level fault tolerance
+Validate region selection strategy
+Align with AWS service lifecycle policies
+Enable controlled DR testing
+Maintain data durability guarantees
 
-### Technical Objectives
+Operational Objectives
 
-* Ensure production high availability
-* Validate Multi-AZ configuration
-* Maintain service continuity
-* Enable zone-level fault tolerance
-* Validate region selection strategy
-* Align with AWS service lifecycle policies
-* Enable controlled DR testing
-* Maintain data durability guarantees
+Formalize DR documentation
+Define failover procedures
+Establish governance controls
+Prepare DR testing processes
+Define change management workflows
+Ensure operational predictability
 
-### Operational Objectives
+________________________________________________________________________________________________________________________________________________________________________________________
+Architecture Model
 
-* Formalize DR documentation
-* Define failover procedures
-* Establish governance controls
-* Prepare DR testing processes
-* Define change management workflows
-* Ensure operational predictability
-
----
-
-## Architecture Model
-
-### Core Platform
+Core Platform
 
 * AWS RDS SQL Server
 * Managed High Availability
@@ -133,24 +133,6 @@ This project follows a:
 
 > **Managed Service High Availability & Disaster Recovery Methodology**
 
-Not:
-
-* infrastructure clustering
-* node-based failover
-* manual replication
-* self-managed HA
-
-But:
-
-* platform-managed HA
-* service-level resilience
-* cloud-native DR
-* managed backups
-* automated recovery
-* governance-driven design
-* reliability-first architecture
-
----
 
 ## Architecture Pattern
 
