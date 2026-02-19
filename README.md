@@ -40,7 +40,7 @@ AWS RDS SQL Server HA
 https://github.com/LuisLorenzo-Marin-Experience/CaseStudy/blob/6b81224bad78e8e0ded9b0398c1cc88e68016745/AWSRDS-SQLServer-HADR
 
 SQL Server Database Migrations
-- Database Migration Projects
+- Database Migration Projects from physical server to VM
   
 https://github.com/LuisLorenzo-Marin-Experience/CaseStudy/blob/7a881ad8b1a9e4e88cb629ec2807ecd38e2007ff/SQL-Server-Database-Migration
 
