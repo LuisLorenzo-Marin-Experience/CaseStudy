@@ -18,37 +18,23 @@ Objectives
 Technical Objectives
 
 Add a third node to the existing WSFC
-
 Preserve cluster stability
-
 Validate quorum configuration
-
 Maintain workload symmetry
-
 Ensure storage consistency
-
 Guarantee network reliability
-
 Maintain OS and patch consistency
-
 Preserve SQL Server availability
-
 Enforce configuration parity
-
 Prepare structured DR readiness
 
 Operational Objectives
 
 Establish validation processes
-
 Formalize governance controls
-
 Enable structured DR documentation
-
 Support maintenance operations
-
 Define change management workflows
-
 Prepare formal DR test planning
 
 Engineering Scope
@@ -56,47 +42,26 @@ Third WSFC Node Integration
 Validation & Readiness Checklist
 
 Cluster Validation
-
 Execute full WSFC validation report
-
 Validate quorum configuration
-
 Confirm cluster membership health
-
 Validate failover scenarios
-
 Compute
-
 Comparable workload handling vs existing nodes
-
 CPU, memory, and IO parity
-
 Performance symmetry
-
 Storage
-
 Sufficient disk space
-
 Identical disk paths
-
 Shared storage compatibility
-
 Failover storage validation
-
 Storage performance parity
-
 Network
-
 Dedicated network adapters
-
 Network traffic separation
-
 HA traffic isolation
-
 Heartbeat network stability
-
 Cluster communication reliability
-
 Multi-Region WSFC Networking (Microsoft Architecture Perspective)
 
 When extending WSFC across regions or sites, the following Microsoft platform requirements apply:
@@ -104,33 +69,21 @@ When extending WSFC across regions or sites, the following Microsoft platform re
 Required Network Components
 
 TCP/UDP — Cluster service
-
 TCP — RPC
-
 UDP — Cluster Administrator
-
 ICMP
-
 TCP — SMB
-
 Random high UDP ports
 
 Constraints
 _____________________________________________________________________________________________________________________________________________________________________________________________
 Firewall rule complexity
-
 Network security configuration
-
 Latency sensitivity
-
 Throughput limitations
-
 Cluster heartbeat reliability
-
 Network jitter tolerance
-
 Bandwidth availability
-
 Critical Microsoft Design Principle:
 Network latency and bandwidth are limiting factors for WSFC stability.
 
@@ -138,42 +91,28 @@ SQL Server Layer Requirements
 Mandatory Microsoft Conditions
 
 Node must be a WSFC member
-
 SQL Server Enterprise Edition
-
 Identical patch/software levels
-
 Same SQL Server Service account
-
 Security principal consistency
-
 Configuration symmetry
-
 Version alignment
-
 Feature parity across nodes
 
 Disaster Recovery (DR) Readiness — Microsoft Model
 DR Engineering Requirements
 
 Formal DR documentation
-
 Recovery procedures
-
 Failover workflows
-
 Recovery validation steps
-
 Operational runbooks
-
 RPO/RTO definitions
-
 Communication protocols
-
 Test execution planning
 
 Governance model
-
+___________________________________________________________________________________________________________________________________________________________
 Compliance documentation
 
 The project explicitly identified the need for formal DR documentation and structured DR testing governance.
