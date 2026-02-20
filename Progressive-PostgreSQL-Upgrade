@@ -1,5 +1,5 @@
 Controlled PostgreSQL Version Upgrade Strategy in AWS Production Environments
-
+____________________________________________________________________________________________________________________________________________________________________________________________
 Executive Summary:
 
 Upgrading from PostgreSQL version 12.19. Progressive PostgreSQL Upgrade Strategy for Production & PreProduction Environments on AWS
@@ -27,7 +27,7 @@ However, a **direct upgrade to PostgreSQL 14** was not executed immediately in p
 * phased upgrade strategy
 * production risk controls
 
-Instead, a **progressive migration model** was adopted.
+Instead, a progressive migration model was adopted.
 
 ______________________________________________________________________________________________________________________________________________________________________________________________________
 
@@ -66,6 +66,7 @@ Production Environment
 
 PostgreSQL 12.x (older minor version)
 → PostgreSQL 12.14
+→ PostgreSQL 13.14
 
 Purpose:
 
@@ -76,16 +77,12 @@ Purpose:
 * Align with AWS lifecycle policies
 * Reduce upgrade blast radius
 
----
+Phase 2 — Modernization Upgrade
 
-### Phase 2 — Modernization Upgrade
+PreProduction Environment
 
-**PreProduction Environment**
-
-```
 PostgreSQL 13.x
 → PostgreSQL 14.x
-```
 
 Purpose:
 
@@ -97,13 +94,13 @@ Purpose:
 * Prepare production migration path
 * De-risk major version upgrade
 
----
+___________________________________________________________________________________________________________________________________________________________________
 
-## Engineering Rationale
+Engineering Rationale
 
 This strategy follows **enterprise-grade upgrade principles**:
 
-### Risk Management
+Risk Management
 
 * No direct major version jump in production
 * Staged validation environments
@@ -111,7 +108,7 @@ This strategy follows **enterprise-grade upgrade principles**:
 * Rollback capability
 * Progressive exposure
 
-### Platform Engineering
+Platform Engineering
 
 * Version lifecycle management
 * Compatibility validation
@@ -119,7 +116,7 @@ This strategy follows **enterprise-grade upgrade principles**:
 * Vendor deprecation alignment
 * Cloud service lifecycle governance
 
-### Reliability Engineering
+Reliability Engineering
 
 * Backup-first approach
 * Snapshot-based rollback
@@ -127,13 +124,13 @@ This strategy follows **enterprise-grade upgrade principles**:
 * Verification checkpoints
 * Controlled maintenance window
 
----
+__________________________________________________________________________________________________________________________________________________________________________
 
-## ⚙️ Operational Plan
+Operational Plan
 
-### Step 1 — Full Backup Strategy
+Step 1 — Full Backup Strategy
 
-**Multi-layer backup model:**
+Multi-layer backup model:
 
 1. Infrastructure level:
 
@@ -152,41 +149,39 @@ Purpose:
 
 ---
 
-### Step 2 — Controlled Upgrade Execution
+Step 2 — Controlled Upgrade Execution
 
 * Version upgrade execution
 * No schema changes
 * No application changes
 * Platform-only operation
 
----
+Step 3 — Verification Protocol
 
-### Step 3 — Verification Protocol
-
-#### Technical verification:
+Technical verification:
 
 * Engine version confirmation
 * Service health validation
 * Connectivity checks
 * Application access tests
 
-#### Operational verification:
+Operational verification:
 
 * Team notification
 * Change communication
 * Documentation updates
 
----
+____________________________________________________________________________________________________________________________________________________________________________
 
-## Operational Constraints
+Operational Constraints
 
 * **Time window:** 1 hour
 * **Production impact:** Controlled downtime window
 * **Rollback readiness:** Snapshot + export
 
----
+_______________________________________________________________________________________________________________________________________________________________________________
 
-## Governance Model
+Governance Model
 
 * Stakeholder approval workflow
 * Change communication protocol
@@ -196,11 +191,11 @@ Purpose:
 * Application dependency validation
 * Risk classification model
 
----
+_________________________________________________________________________________________________________________________________________________________________________________
 
-## Outcomes
+Outcomes
 
-### Technical Outcomes
+Technical Outcomes
 
 * Production stability preserved
 * AWS deprecation risk mitigated
@@ -209,7 +204,7 @@ Purpose:
 * Compatibility validation enabled
 * Future migration path prepared
 
-### Operational Outcomes
+Operational Outcomes
 
 * Controlled change management
 * Predictable deployment window
@@ -218,7 +213,7 @@ Purpose:
 * No reported configuration issues
 * Structured upgrade governance
 
-## Engineering Principles Applied
+Engineering Principles Applied
 
 * Backup-first operations
 * Progressive exposure
@@ -229,6 +224,4 @@ Purpose:
 * Platform lifecycle engineering
 * Reliability-first design
 * Operational safety modeling
-
----
 
