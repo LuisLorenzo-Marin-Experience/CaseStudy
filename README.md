@@ -47,6 +47,10 @@ https://github.com/LuisLorenzo-Marin-Experience/CaseStudy/blob/7a881ad8b1a9e4e88
   
 https://github.com/LuisLorenzo-Marin-Experience/CaseStudy/blob/272622b0fe663705532b1014410b3b677d16fb3f/SQL-Server-Database-Migration-2014
 
+- Database Migration to Azure SQL
+  
+https://github.com/LuisLorenzo-Marin-Experience/CaseStudy/blob/986d9552735847b2ccce614fbaafe56884b54d91/Migration-From-AWS-RDS-SQLServer
+
 This portfolio is designed as a **living engineering knowledge base**, not a code dump.
 ---
 Feel free to explore my repositories, and don't hesitate to reach out if you'd like to collaborate!
