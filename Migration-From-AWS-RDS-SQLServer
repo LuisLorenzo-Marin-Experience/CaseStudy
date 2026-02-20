@@ -1,33 +1,37 @@
 Enterprise Database Migration Case Study: AWS RDS SQL Server to Azure SQL Platform
-
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 Executive Summary:
 
 This case study documents the successful migration of a mission-critical SQL Server workload from AWS RDS SQL Server to Microsoft Azure SQL platforms. The project implemented a dual-path strategy, enabling modernization through Azure SQL Database for 
-cloud-native workloads and compatibility-driven migration through Azure SQL Managed Instance for legacy systems. The migration improved operational efficiency, security posture, scalability, and governance while ensuring business continuity, performance stability, and compliance alignment. This initiative represents a strategic transformation from infrastructure-managed databases to platform-managed data service
-
+cloud-native workloads and compatibility-driven migration through Azure SQL Managed Instance for legacy systems. The migration improved operational efficiency, security posture, scalability, and governance while ensuring business continuity, performance stability, 
+and compliance alignment. This initiative represents a strategic transformation from infrastructure-managed databases to platform-managed data service
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 Business Context
 
 This project involved the migration of a production-grade SQL Server workload from Amazon Web Services RDS SQL Server to Microsoft Azure, supporting business-critical applications with strict requirements for:
-Availability
-Security
-Compliance
-Performance
-Scalability
-Business continuity
+
+* Availability
+* Security
+* Compliance
+* Performance
+* Scalability
+* Business continuity
 
 The migration was part of a cloud modernization and platform consolidation strategy.
 
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 Objectives
 
-Modernize database platform
-Reduce infrastructure management overhead
-Improve availability and resiliency
-Enhance security posture
-Enable cloud-native services
-Optimize cost model
-Standardize governance and operations
-Enable DevOps integration
+* Modernize the database platform
+* Reduce infrastructure management overhead
+* Improve availability and resiliency
+* Enhance security posture
+* Enable cloud-native services
+* Optimize cost model
+* Standardize governance and operations
+* Enable DevOps integration
 
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 Migration Paths
 Path A — AWS RDS SQL Server ➜ Azure SQL Database
 
@@ -79,6 +83,7 @@ Monolithic systems
 
 Minimal-change migrations
 
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 Migration Strategy
 Technical Approach
@@ -137,6 +142,8 @@ Alerting
 Compliance reporting
 Audit logging
 
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
 Outcomes
 
 Successful migration
@@ -149,3 +156,5 @@ Cloud-native scalability
 Platform standardization
 DevOps enablement
 Compliance alignment
+
+For better support, the Azure SQL managed instance was chosen.
