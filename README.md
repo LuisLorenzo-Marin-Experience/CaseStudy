@@ -21,7 +21,7 @@ https://github.com/LuisLorenzo-Marin-Experience/CaseStudy/blob/9f49f9c875e6d8131
 PostgreSQL Upgrade
 - Project Executed Upgrade of the engine version
 
-https://github.com/LuisLorenzo-Marin-Experience/CaseStudy/blob/563e73a8ef07d3c7e930a3f157a1b49142b59d1b/Progressive-PostgreSQL-Upgrade
+https://github.com/LuisLorenzo-Marin-Experience/CaseStudy/blob/153c608d6192d9c236d56916cf718d075c0976b4/Progressive-PostgreSQL-Upgrade
 
 PostgreSQL MySQL integration
 - Project Executed linking engines
