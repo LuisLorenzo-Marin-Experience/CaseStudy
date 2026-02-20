@@ -2,7 +2,8 @@ AWS RDS SQL Server High Availability Solution
 __________________________________________________________________________________________________________________________________________________________________________________
 Executive Summary Case Study: AWS RDS SQL Server High Availability & Disaster Recovery Architecture
 
-This document reflects the implementation of a High Available solution using AWS RDS MultiAZ 
+This project implemented a cloud-native high-availability and disaster-recovery architecture using AWS RDS for SQL Server. By leveraging managed Multi-AZ deployments, automated failover, and snapshot-based recovery models, 
+The platform achieved service-level resilience, reduced operational complexity, and established a governed, enterprise-grade HA/DR strategy.
 ___________________________________________________________________________________________________________________________________________________________________________________
 
 Business Context
@@ -54,13 +55,11 @@ Core Platform
 * Managed replication
 * Cloud-native resilience model
 
----
+________________________________________________________________________________________________________________________________________________________________________________________
 
-## Engineering Scope
-
-### High Availability Configuration (Multi-AZ)
-
-#### Platform Capabilities
+Engineering Scope
+High Availability Configuration (Multi-AZ)
+Platform Capabilities
 
 * Synchronous replication
 * Automatic failover
@@ -68,19 +67,15 @@ Core Platform
 * Managed infrastructure
 * Service-level HA
 * SLA-driven availability model
-
-**Engineering Focus:**
-
 * Eliminate infrastructure-level clustering
 * Use platform-managed HA
 * Reduce operational complexity
 * Shift from node-based HA to service-based HA
 
----
+_____________________________________________________________________________________________________________________________________________________________________________________________
 
-### Region Strategy & Governance
-
-#### Engineering Considerations
+Region Strategy & Governance
+Engineering Considerations
 
 * Ability to select specific AWS regions
 * Regional service availability
@@ -91,14 +86,14 @@ Core Platform
 * DR region alignment
 * Network topology design
 
-**Key design principle:**
+Key design principle:
 Region selection is a governance decision, not just a technical one.
 
----
+__________________________________________________________________________________________________________________________________________________________________________________________________
 
-## Disaster Recovery (DR) Strategy — Cloud Model
+Disaster Recovery (DR) Strategy — Cloud Model
 
-### DR Engineering Components
+DR Engineering Components
 
 * Automated backups
 * Snapshot management
@@ -109,9 +104,9 @@ Region selection is a governance decision, not just a technical one.
 * Service-level recovery
 * Platform-managed durability
 
----
+________________________________________________________________________________________________________________________________________________________________________________________________
 
-### DR Testing Requirements
+ DR Testing Requirements
 
 * Formal DR documentation
 * Recovery workflows
@@ -123,55 +118,21 @@ Region selection is a governance decision, not just a technical one.
 * Operational runbooks
 * Communication plans
 
----
+__________________________________________________________________________________________________________________________________________________________________________________________________
 
-## Methodology Identified
+Methodology
 
-### Cloud-Native HA/DR Engineering Model
+Cloud-Native HA/DR Engineering Model
 
 This project follows a:
 
-> **Managed Service High Availability & Disaster Recovery Methodology**
+Managed Service High Availability & Disaster Recovery Methodology
 
+___________________________________________________________________________________________________________________________________________________________________________________________________
 
-## Architecture Pattern
+Outcomes
 
-```
-AWS RDS SQL Server
-        +
-Multi-AZ High Availability
-        +
-Managed Replication
-        +
-Automated Failover
-        +
-Snapshot-based DR
-        +
-Cross-Region Recovery Model
-        +
-Formal DR Governance
-```
-
----
-
-## Engineering Principles Applied
-
-* Cloud-native design
-* Managed service architecture
-* Service-level resilience
-* Platform abstraction
-* Reliability engineering
-* Automation-first operations
-* Governance-driven architecture
-* Operational simplicity
-* Fault-domain isolation
-* Region-level resilience
-
----
-
-## Outcomes
-
-### Technical Outcomes
+Technical Outcomes
 
 * High availability ensured
 * Multi-AZ resilience validated
@@ -182,7 +143,7 @@ Formal DR Governance
 * DR recovery model defined
 * Region-level resilience enabled
 
-### Operational Outcomes
+Operational Outcomes
 
 * Formal DR planning
 * Structured governance model
@@ -192,25 +153,4 @@ Formal DR Governance
 * Standardized recovery procedures
 * Test readiness achieved
 * Documentation governance enabled
-
----
-
-## Professional Summary Statement
-
-> “This project implemented a cloud-native high availability and disaster recovery architecture using AWS RDS SQL Server. By leveraging managed Multi-AZ deployments, automated failover, and snapshot-based recovery models, the platform achieved service-level resilience, reduced operational complexity, and established a governed, enterprise-grade HA/DR strategy.”
-
----
-
-## Methodology Classification
-
-| Dimension            | Classification                 |
-| -------------------- | ------------------------------ |
-| Platform             | AWS Managed Services           |
-| HA Model             | Multi-AZ RDS                   |
-| DR Model             | Snapshot-based / Restore-based |
-| Architecture         | Cloud-native                   |
-| Governance           | Enterprise-grade               |
-| Risk Model           | Risk-controlled                |
-| Engineering Maturity | Advanced                       |
-| Platform Strategy    | Reliability-first              |
 
