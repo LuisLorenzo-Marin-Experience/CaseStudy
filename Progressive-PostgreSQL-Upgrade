@@ -1,21 +1,16 @@
+Controlled PostgreSQL Version Upgrade Strategy in AWS Production Environments
 
-# Case Study
+Executive Summary:
 
-## Controlled PostgreSQL Version Upgrade Strategy in AWS Production Environments
+Upgrading from PostgreSQL version 12.19. Progressive PostgreSQL Upgrade Strategy for Production & PreProduction Environments on AWS
 
----
+___________________________________________________________________________________________________________________________________________________________________________________________________
 
-## 🧭 Project Title
+Business  Context
 
-**Progressive PostgreSQL Upgrade Strategy for Production & PreProduction Environments on AWS**
+The organization was operating production workloads on PostgreSQL 12.x hosted in AWS, with Strapi 4.5 as an application dependency layer.
 
----
-
-## 📍 Context
-
-The organization was operating production workloads on **PostgreSQL 13.x** hosted in **AWS**, with **Strapi 4.5** as an application dependency layer.
-
-The long-term target platform was **PostgreSQL 14**, driven by:
+The long-term target platform was  PostgreSQL 14, driven by:
 
 * platform lifecycle management
 * security updates
@@ -34,46 +29,43 @@ However, a **direct upgrade to PostgreSQL 14** was not executed immediately in p
 
 Instead, a **progressive migration model** was adopted.
 
----
+______________________________________________________________________________________________________________________________________________________________________________________________________
 
-## 🎯 Objectives
+Objectives
+Technical Objectives
 
-### Technical Objectives
+Maintain production stability
+Align with AWS deprecation policies
+Avoid unsupported engine versions
+Ensure application compatibility
+Minimize downtime
+Maintain rollback capability
+Ensure data integrity
+Enable staged modernization
 
-* Maintain production stability
-* Align with AWS deprecation policies
-* Avoid unsupported engine versions
-* Ensure application compatibility
-* Minimize downtime
-* Maintain rollback capability
-* Ensure data integrity
-* Enable staged modernization
+Operational Objectives
 
-### Operational Objectives
+Risk-controlled production changes
+Clear stakeholder communication
+Controlled maintenance windows
+Predictable timelines
+Business continuity
+Compliance with platform lifecycle management
 
-* Risk-controlled production changes
-* Clear stakeholder communication
-* Controlled maintenance windows
-* Predictable timelines
-* Business continuity
-* Compliance with platform lifecycle management
+_____________________________________________________________________________________________________________________________________________________________________________________________________________
 
----
+Strategy Adopted
 
-## Strategy Adopted
-
-### **Progressive Upgrade Model (Phased Migration)**
+Progressive Upgrade Model (Phased Migration)
 
 Rather than performing a direct major version jump, the project adopted a **two-phase migration strategy**:
 
-### Phase 1 — Stabilization Upgrade
+Phase 1 — Stabilization Upgrade
 
-**Production Environment**
+Production Environment
 
-```
-PostgreSQL 13.x (older minor version)
-→ PostgreSQL 13.15
-```
+PostgreSQL 12.x (older minor version)
+→ PostgreSQL 12.14
 
 Purpose:
 
