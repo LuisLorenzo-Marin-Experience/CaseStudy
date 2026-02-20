@@ -1,9 +1,11 @@
 Case Study: Heterogeneous Database Integration (PostgreSQL-MySQL) - 2018 Retrospective
-
-1. Executive Summary
+_______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+Executive Summary
 This study analyzes the technical feasibility of data synchronization between a Libertya ERP system (running on PostgreSQL) and an external MySQL database. The evaluation focuses on using the DBI-Link component and the PL/Perl procedural language as a communication bridge
 
-2. The Challenge
+_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+The Challenge
 The objective was to automate a daily data insertion process into the production environment (PostgreSQL) based on complex SELECT queries executed on a remote MySQL host.
 
 Environment Constraints (Circa 2018):
@@ -15,8 +17,8 @@ Frequency: Scheduled daily task (Cron-based).
 
 Resource Optimization: Estimated implementation time of ~10 hours.
 
-
-3. Proposed Technology Stack
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+Proposed Technology Stack
 Based on the stability of Linux environments at the time, the following tools were selected:
 
 Database Engine: PostgreSQL.
@@ -27,7 +29,9 @@ Middleware: DBI-Link. A project leveraging Perl’s DBI drivers to treat remote 
 
 Access Protocol: SSH for remote administration and secure data tunneling.
 
-4. Solution Architecture
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+Solution Architecture
 The technical workflow was broken down into the following implementation phases:
 
 PL/Perl Enablement: Verification of PostgreSQL compilation with the --with-perl flag.
@@ -41,12 +45,15 @@ Creation of a dedicated SCHEMA within the Libertya database.
 Mapping credentials and "host coordinates" (IP/Port) for the remote MySQL instance.
 
 Synchronization Logic: Implementation of an INSERT INTO ... SELECT ... routine, scheduled to run as a background service.
+___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
-5. Feasibility Analysis (Retrospective)CriterionEvaluationTechnical NoteFeasibilityHighDBI-Link was a mature and well-documented solution in 2018.
+Feasibility Analysis (Retrospective)CriterionEvaluationTechnical NoteFeasibilityHighDBI-Link was a mature and well-documented solution in 2018.
 SecurityCritical The requirement for SSH access and plain credentials necessitated the use of VPNs or restrictive Firewalls. 
 Cost/BenefitExcellent1 00% Open Source solution with no licensing overhead.
 
-6. Conclusions
+___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+Conclusions
+
 The technical proposal was robust by the database integration standards of the era. While modern alternatives like Foreign Data Wrappers (FDW) have since become the native standard,
 the DBI-Link approach provided total compatibility with specific Libertya ERP versions and environments where Perl was the preferred scripting standard.
 
