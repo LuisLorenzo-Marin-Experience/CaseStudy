@@ -1,10 +1,12 @@
 Migration from SQL Server 2005 to SQL Server 2014 (Single Instance)
-
+_____________________________________________________________________________________________________________________________________________________________________________________
 Executive Case Study Summary
 
-This case study documents the modernization of a legacy SQL Server 2005 single-instance environment to SQL Server 2014. The project addressed critical risks related to licensing compliance, platform obsolescence, scalability limitations, 
-and operational sustainability. The migration strategy combined technical modernization with organizational enablement through training, consulting, and infrastructure modernization. The result was a secure, scalable, compliant, and supportable 
-database platform aligned with modern enterprise standards.
+This case study documents the modernization of a legacy SQL Server 2005 single-instance environment to SQL Server 2014. The project addressed critical risks related to licensing 
+compliance, platform obsolescence, scalability limitations, and operational sustainability. The migration strategy combined technical modernization with organizational enablement 
+through training, consulting, and infrastructure modernization. The result was a secure, scalable, compliant, and supportable database platform aligned with modern enterprise standards.
+
+_________________________________________________________________________________________________________________________________________________________________________________________
 
 Business Context
 
@@ -33,6 +35,8 @@ Licensing misalignment
 Compliance risk
 Scalability limitations
 Performance and concurrency risks
+
+_________________________________________________________________________________________________________________________________________________________________________________
 
 Business & Technical Drivers for Migration
 Technical Drivers
@@ -69,6 +73,8 @@ Core-based licensing model
 Modern hardware or virtualized infrastructure
 Centralized monitoring and governance
 
+_________________________________________________________________________________________________________________________________________________________________________
+
 Migration Strategy
 Technical Phases
 
@@ -85,11 +91,13 @@ Post-migration validation
 
 Additional Components to Include in the Proposal
 
-1️⃣ Training Program (Courses)
-2️⃣ Consulting Services
-3️⃣ Infrastructure & OS Licensing
+Training Program (Courses)
+Consulting Services
+Infrastructure & OS Licensing
 
-Expected Outcomes
+______________________________________________________________________________________________________________________________________________________________________________
+
+Outcomes
 
 Supported SQL Server platform
 Compliance-aligned licensing
