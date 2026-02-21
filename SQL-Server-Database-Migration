@@ -1,7 +1,9 @@
-Database Server Migration
+SQL Server Database Server Migration
 ________________________________________________________________________________________________________________________________________________________________________________
 Executive Summary
-This case demonstrates a **complex enterprise database migration** involving infrastructure virtualization, database engine upgrade, security identity preservation, integration continuity, and dependency management. The project applied Microsoft-supported methodologies, automation tooling, and controlled operational processes to ensure system stability, business continuity, and compliance.
+This case demonstrates a complex enterprise database migration involving infrastructure virtualization, database engine upgrade, security identity preservation, integration continuity,
+and dependency management. The project applied Microsoft-supported methodologies, automation tooling, and controlled operational processes to ensure system stability, business continuity,
+and compliance.
 ________________________________________________________________________________________________________________________________________________________________________________
 
 Business Context
@@ -30,8 +32,7 @@ Role: New production database server
 
 ______________________________________________________________________________________________________________________________________________________________________________________
 
-## ⚠ Key Difference from Previous Migrations
-
+Key Difference from Previous Migrations
 Previous bank migrations:
 
 * Physical ➜ Virtual
@@ -73,9 +74,7 @@ Infrastructure & Security
 * New server added to **bank backup policies**
 * Identification of **dependent services and servers** 
 
----
-
-# 🗄 Databases Migrated
+# Databases Migrated
 
 | Database            | Data File                  | Log File                   |
 | ------------------- | -------------------------- | -------------------------- |
@@ -87,9 +86,9 @@ Infrastructure & Security
 | BD_6                | BD_6_DD.mdf                | BD_6_DT.ldf                |
 | BD_7                | BD_7__DD.mdf               | BD_7_DT.ldf                |
 
----
+______________________________________________________________________________________________________________________________________________________________________________
 
-# 🔐 Security Migration Strategy
+Security Migration Strategy
 
 ### Challenge
 
@@ -111,18 +110,10 @@ This preserves:
 * Expiration rules
 * Disabled states
 
-This avoids:
-❌ Manual user recreation
-❌ Security reconfiguration delays
-❌ Authentication failures
-❌ Permission mismatches
-
 **Method used:** Microsoft documented Method #2
 ("Transfer logins and passwords between SQL Server instances") 
 
----
-
-# 🔗 Linked Server Migration
+# Linked Server Migration
 
 ### Purpose
 
@@ -132,19 +123,21 @@ Preserve **inter-database and inter-server integrations**.
 
 PowerShell automation:
 
-```powershell
+powershell
 Copy-dbalinkedServer -Source svr1\named -Destination svr2\named
-```
 
-### Outcome
+__________________________________________________________________________________________________________________________________________________________________________
+
+Outcome
 
 * Linked servers copied automatically
 * Credentials preserved
-* Connectivity validated post-migration 
+* Connectivity validated post-migration
+* Databases migrated
 
----
+___________________________________________________________________________________________________________________________________________________________________________
 
-# 🧪 Validation Phase
+Validation Phase
 
 ## Functional Validation
 
@@ -156,7 +149,7 @@ Copy-dbalinkedServer -Source svr1\named -Destination svr2\named
 
 ---
 
-# 📆 Cutover Strategy
+#Cutover Strategy
 
 ### Pre-Go-Live
 
@@ -172,7 +165,7 @@ Copy-dbalinkedServer -Source svr1\named -Destination svr2\named
 
 ---
 
-# 🌐 Dependency Management
+Dependency Management
 
 ### Risk Identified
 
@@ -196,7 +189,7 @@ This enabled **transparent redirection without application reconfiguration**.
 
 ---
 
-# 🧠 Architectural Patterns Applied
+# Architectural Patterns Applied
 
 * Blue/Green migration model
 * Security identity preservation
@@ -206,9 +199,9 @@ This enabled **transparent redirection without application reconfiguration**.
 * Phased validation
 * Rollback readiness
 
----
+________________________________________________________________________________________________________________________________________________________________
 
-# 📊 Risk Management
+Risk Management
 
 | Risk                | Mitigation                    |
 | ------------------- | ----------------------------- |
@@ -219,9 +212,9 @@ This enabled **transparent redirection without application reconfiguration**.
 | Backup gaps         | Backup agent configuration    |
 | Dependency failures | Pre-identified server mapping |
 
----
+_________________________________________________________________________________________________________________________________________________________________
 
-# 🏁 Outcome
+Final Outcome
 
 Successful migration
 Zero data loss
