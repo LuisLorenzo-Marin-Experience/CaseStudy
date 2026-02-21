@@ -1,8 +1,8 @@
-Case Study: Heterogeneous Database Integration (PostgreSQL-MySQL) - 2018 Retrospective
+Heterogeneous Database Integration (PostgreSQL-MySQL) - 2018 Retrospective
 _______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 Executive Summary
-This study analyzes the technical feasibility of data synchronization between a Libertya ERP system (running on PostgreSQL) and an external MySQL database. The evaluation focuses on using the DBI-Link component and the PL/Perl procedural language as a communication bridge
-
+This study analyzes the technical feasibility of data synchronization between a Libertya ERP system (running on PostgreSQL) and an external MySQL database. 
+The evaluation focuses on using the DBI-Link component and the PL/Perl procedural language as a communication bridge
 _________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 The Challenge
@@ -52,6 +52,7 @@ SecurityCritical The requirement for SSH access and plain credentials necessitat
 Cost/BenefitExcellent1 00% Open Source solution with no licensing overhead.
 
 ___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
 Conclusions
 
 The technical proposal was robust by the database integration standards of the era. While modern alternatives like Foreign Data Wrappers (FDW) have since become the native standard,
