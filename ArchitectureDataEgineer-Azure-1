@@ -1,0 +1,105 @@
+Performance Optimization & Support of an Azure Data Platform
+-------------------------------------------------------------------------------------------------------------
+Overview
+
+This case study describes my experience supporting and optimizing a production data platform built on Microsoft Azure.
+
+The platform integrates customer data from Salesforce into a centralized data warehouse and supports downstream analytics and web applications.
+
+Although I did not design the architecture from scratch, I played a key role in database performance optimization and operational support, 
+while gaining a deep understanding of the end-to-end data architecture.
+
+------------------------------------------------------------------------------------------------------------------
+Architecture Summary
+------------------------------------------------------------------------------------------------------------------
+The platform follows a layered data architecture:
+
+Data ingestion from Salesforce using Azure Data Factory
+Staging and storage using Azure Blob Storage
+Data warehouse hosted on Azure SQL Managed Instance
+Data processing and analysis using Azure Databricks
+Data consumption via web applications hosted on Azure App Service
+
+This architecture supports batch ingestion, transformation, and reporting workloads.
+
+-----------------------------------------------------------------------------------------------------------------
+Data Flow
+-----------------------------------------------------------------------------------------------------------------
+Customer data is extracted from Salesforce using scheduled pipelines in Azure Data Factory
+Data is stored in a staging layer in Blob Storage
+Data is loaded into Azure SQL Managed Instance for structured storage
+Azure Databricks is used for data transformation and analytical processing
+Processed data is consumed by web applications and reporting tools
+
+-----------------------------------------------------------------------------------------------------------------
+My Role & Contributions
+-----------------------------------------------------------------------------------------------------------------
+Database Performance Optimization
+Working primarily with Azure SQL Managed Instance, I focused on:
+
+Query performance tuning for reporting workloads
+Index optimization to improve query execution times
+Analysis of execution plans to identify bottlenecks
+Supporting data growth through efficient query design
+
+Impact: Improved performance of key queries and reduced execution times in large datasets.
+
+---------------------------------------------------------------------------------------------------------------
+Data Pipeline Support
+----------------------------------------------------------------------------------------------------------------
+Supporting ingestion pipelines built with Azure Data Factory:
+
+Troubleshooting pipeline failures and execution issues
+Assisting in improving reliability of scheduled data loads
+Supporting incremental data load strategies
+
+Impact: Increased stability and reliability of data ingestion processes.
+
+-------------------------------------------------------------------------------------------------------------
+Monitoring & Troubleshooting
+-------------------------------------------------------------------------------------------------------------
+Investigated performance issues in production environments
+Assisted in identifying bottlenecks across database and pipeline layers
+Collaborated with cross-functional teams to resolve incidents
+
+--------------------------------------------------------------------------------------------------------------
+Challenges & Solutions
+--------------------------------------------------------------------------------------------------------------
+Challenge 1: Slow Reporting Queries
+Issue: Queries on large datasets were impacting performance
+Solution: Implemented indexing improvements and optimized query structures
+Result: Reduced execution time and improved user experience
+
+Challenge 2: Pipeline Failures
+Issue: Intermittent failures in data ingestion pipelines
+Solution: Assisted in troubleshooting and improving monitoring
+Result: Increased reliability of scheduled data loads
+
+Challenge 3: Growing Data Volume
+Issue: Increasing data volume affecting performance
+Solution: Optimized queries and supported better data handling strategies
+Result: Maintained performance as data scaled
+
+Challenge 4: Long running Queries
+Issue: Long queries never ending processing
+Solution: Identify root cause of long running queries
+Result: Adjusted queries during maintenance windows
+
+--------------------------------------------------------------------------------------------------------------------------
+Architectural Understanding
+--------------------------------------------------------------------------------------------------------------------------
+
+Through this experience, I developed a strong understanding of:
+
+End-to-end data flow from ingestion to consumption
+Separation of staging and curated data layers
+Batch processing strategies for cost efficiency
+Trade-offs between performance, cost, and scalability
+
+------------------------------------------------------------------------------------------------------------------------------------
+Key Learnings
+------------------------------------------------------------------------------------------------------------------------------------
+Performance tuning in cloud databases requires a balance between indexing, query design, and workload patterns
+Data pipeline reliability is critical for downstream systems
+Understanding the full data architecture enables better troubleshooting and optimization
+Supporting existing systems provides valuable real-world experience in scalability and operations
