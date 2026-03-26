@@ -14,8 +14,7 @@ Business Context
 The project focused on extending the existing WSFC architecture by integrating a third cluster node, while ensuring platform stability, reliability, and operational consistency.
 ___________________________________________________________________________________________________________________________________________________________________________________
 
-Objectives
-Technical Objectives
+Objectives - Technical Objectives
 
 Add a third node to the existing WSFC
 Preserve cluster stability
@@ -46,6 +45,7 @@ Execute full WSFC validation report
 Validate quorum configuration
 Confirm cluster membership health
 Validate failover scenarios
+
 Compute
 Comparable workload handling vs existing nodes
 CPU, memory, and IO parity
@@ -74,9 +74,10 @@ UDP — Cluster Administrator
 ICMP
 TCP — SMB
 Random high UDP ports
-
+_______________________________________________________________________________________________________________
 Constraints
-_____________________________________________________________________________________________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________
+
 Firewall rule complexity
 Network security configuration
 Latency sensitivity
@@ -111,8 +112,9 @@ RPO/RTO definitions
 Communication protocols
 Test execution planning
 
+_______________________________________________________________________________________________________________
 Governance model
-___________________________________________________________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________
 Compliance documentation
 
 The project explicitly identified the need for formal DR documentation and structured DR testing governance.
@@ -120,37 +122,25 @@ The project explicitly identified the need for formal DR documentation and struc
 Methodology 
 Traditional Microsoft High Availability Engineering Model
 
-Outcomes
-Technical Outcomes
-_________________________________________________________________________________________________________________________________________________________________________________________
+_________________________________________________________________________________________________________________
+Outcomes Technical Outcomes
+_________________________________________________________________________________________________________________
 Scalable WSFC architecture
-
 Validated third-node integration model
-
 HA stability preserved
-
 Cluster governance enforced
-
 Network constraints identified
-
 Platform consistency ensured
-
 SQL Server standardization maintained
-
 DR readiness enabled
 
+__________________________________________________________________________________________________________________
 Operational Outcomes
-
+__________________________________________________________________________________________________________________
 Structured change management
-
 Formal governance model
-
 DR documentation planning
-
 Maintenance process definition
-
 Stakeholder coordination
-
 Test readiness preparation
-
 Operational predictability
