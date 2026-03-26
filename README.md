@@ -29,9 +29,9 @@ PostgreSQL MySQL integration
 https://github.com/LuisLorenzo-Marin-Experience/CaseStudy/blob/196e7f1b2b5882a8e4887947e1dadd5c630a2beb/PostgreSQL-MySQL
 
 Traditional Microsoft SQL Server High Availability Cluster Architecture
-Enterprise SQL Server High Availability Architecture using Windows Server Failover Clustering (WSFC)
-
-https://github.com/LuisLorenzo-Marin-Experience/CaseStudy/blob/6cfe88d74762835b639a96711eb4fa8cb99b31d9/microsoft-wsfc-sql-ha
+- Enterprise SQL Server High Availability Architecture using Windows Server Failover Clustering (WSFC)
+  
+https://github.com/LuisLorenzo-Marin-Experience/CaseStudy/blob/c69763254405adf6424695c1b31154247457b02f/microsoft-wsfc-sql-ha
 
 AWS RDS SQL Server HA
 - Designed cloud-native SQL Server HA/DR architectures using AWS RDS Multi-AZ, managed failover, automated backups, and cross-region disaster recovery models.
