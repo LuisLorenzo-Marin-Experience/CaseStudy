@@ -31,7 +31,7 @@ https://github.com/LuisLorenzo-Marin-Experience/CaseStudy/blob/196e7f1b2b5882a8e
 Traditional Microsoft SQL Server High Availability Cluster Architecture
 - Enterprise SQL Server High Availability Architecture using Windows Server Failover Clustering (WSFC)
   
-https://github.com/LuisLorenzo-Marin-Experience/CaseStudy/blob/c69763254405adf6424695c1b31154247457b02f/microsoft-wsfc-sql-ha
+https://github.com/LuisLorenzo-Marin-Experience/CaseStudy/blob/479bad3970f892803f22cf61091b036b89be26dc/microsoft-wsfc-sql-ha
 
 AWS RDS SQL Server HA
 - Designed cloud-native SQL Server HA/DR architectures using AWS RDS Multi-AZ, managed failover, automated backups, and cross-region disaster recovery models.
