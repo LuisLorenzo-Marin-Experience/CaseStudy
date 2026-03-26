@@ -51,6 +51,10 @@ https://github.com/LuisLorenzo-Marin-Experience/CaseStudy/blob/272622b0fe6637055
   
 https://github.com/LuisLorenzo-Marin-Experience/CaseStudy/blob/986d9552735847b2ccce614fbaafe56884b54d91/Migration-From-AWS-RDS-SQLServer
 
+- Architecture Data Engineering Azure
+- 
+https://github.com/LuisLorenzo-Marin-Experience/CaseStudy/blob/c69763254405adf6424695c1b31154247457b02f/ArchitectureDataEgineer-Azure-1
+
 This portfolio is designed as a **living engineering knowledge base**, not a code dump.
 ---
 Feel free to explore my repositories, and don't hesitate to reach out if you'd like to collaborate!
